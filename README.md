@@ -3,7 +3,7 @@
 
 ## Intro a la Algoritmia
 * Primeros conceptos : declaración de listas, carga y agregaciones, for i range, impresiones, tipos de datos, nros al azar
-* Resolución de problemáticas: busqueda de mayor/min, promedios/porcentajes, 
+* Resolución de problemáticas: busqueda de mayor/min, promedios/porcentajes, etc
 * Método de Ordenamiento
   - Método de Selección
   - Método de Intercambio o Burbujeo
