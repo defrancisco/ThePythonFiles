@@ -1,0 +1,10 @@
+a=int(input("ingrese la nota correspondiente al primer parcial: "))
+b=int(input("ingrese la nota correspondiente al segundo parcial: "))
+if (a<1 or b<1) or (a>10 or b>10):
+    print("Error")
+elif a>=7 and b>=7:
+    print("Promocionado")
+elif a>= 4 and b>=4: 
+    print("Aprobado")
+else:
+    print("Debe recuperar")

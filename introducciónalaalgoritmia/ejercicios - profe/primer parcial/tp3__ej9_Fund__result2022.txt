@@ -1,0 +1,20 @@
+#TP 3 ejercicio 9
+basico=int(input("Ingresar el sueldo basico "))
+ant=int(input("Ingresar la antiguedad "))
+estado=int(input("Ingresar el estado civil 1 soltero, 2 casado"))
+print ("Estado Civil: ",estado)
+if estado == 1:
+    sal=(basico*5/100)*ant
+else:
+    sal=(basico*7/100)*ant
+jub=basico*11/100
+os=basico*3/100
+sind=basico*3/100
+sn=basico+sal-(jub+os+sind)
+print ("Sueldo basico             Antiguedad       Descuentos     Importe")
+print("   ",basico,"                  ",ant,"                         ",sal)
+print("                               Jubilacion:   ", jub)
+print("                               Obra Social:  ", os)
+print("                               Sindicato:    ", sind)
+print("                                          ___________")
+print("                      Sueldo neto:           ", sn)

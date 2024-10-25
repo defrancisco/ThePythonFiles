@@ -1,0 +1,19 @@
+#tp 4, ej 3
+"""Realizar un programa para ingresar desde el teclado un conjunto de números y
+mostrar por pantalla el menor y el mayor de ellos. Finalizar la lectura de datos
+con un valor -1."""
+valor=int(input("ingrese un nro "  ))
+if valor == -1:
+    print("No se ingresaron valores")
+else:
+    mayor=valor
+    menor=valor
+    while valor!= -1:
+        if mayor<valor:
+            mayor=valor
+        if menor>valor:
+            menor=valor
+        valor=int(input("ingrese un nro"  ))
+    print("El valor menor es: ",menor,"y el valor mayor es ",mayor)
+    
+  

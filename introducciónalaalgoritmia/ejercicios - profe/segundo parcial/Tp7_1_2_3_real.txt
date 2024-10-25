@@ -1,0 +1,57 @@
+def vector(n1,n2):
+    print("Los numeros deben estar entre",n1,"y",n2)
+    a=int(input("Ingrese un numero o el -1 para finalizar:"))
+    while a!=-1:
+        if a<n1 or a>n2:
+            print("Los numeros deben estar entre",n1,"y",n2)
+            a=int(input("Ingrese un numero, -1 para finalizar:"))
+        else:
+            v.append(a)
+            a=int(input("Ingrese un numero, -1 para finalizar:"))
+    return v
+
+def listacapicua(lista):
+    largo = len(lista)
+    lista2 = []
+          
+    for i in range(largo-1, -1, -1):
+        lista2.append(lista[i])
+    
+    print("Ej 3)")
+    print (lista)
+    print (lista2)
+    
+
+    if lista == lista2:
+        print("La lista es capicúa")
+    else:
+        print("La lista no es capicúa")
+
+
+    
+#Programa principal
+#Ejercicio 1
+print("Ej 1)")
+v=[]
+n1=int(input("ingrese un numero "))
+n2=int(input("ingrese otro numero "))
+if n1>n2:
+    aux=n1
+    n1=n2
+    n2=aux
+lista1=vector(n1,n2)
+print(lista1,end=" ")
+print()
+
+#Ejercicio 2
+print("Ej 2)")
+i=0
+total=0
+for i in range(len(lista1)):
+    total=total+lista1[i]
+print("La suma de los numeros de la lista es",total)
+print()
+
+listacapicua(lista1)
+
+

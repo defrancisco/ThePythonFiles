@@ -1,0 +1,29 @@
+"""
+FdI - Practica 6, ejercicio 10
+Extraer un dígito de un número entero. La función recibe como parámetros dos 
+números enteros, uno será del que se extraiga el dígito y el otro indica qué cifra 
+se desea obtener. La cifra de la derecha se considera la número 0. Retornar el 
+valor -1 si no existe el dígito solicitado. Ejemplo: extraerdigito(12345,1) devuel-
+ve 4, y extraerdigito(12345,8) devuelve -1.
+"""
+
+def extraerdigito(num, pos):
+    cont = 0
+    while cont<=pos:
+        digito = num % 10
+        num = num // 10
+        cont = cont + 1
+    if num==0 and digito==0:
+        return -1
+    else:
+        return digito
+
+# Programa principal
+m = int(input("Ingrese el nümero para extraerle un dìgito: "))
+n = int(input("Dígito a extraer? "))
+dig = extraerdigito(m, n)
+if dig==-1:
+    print("No existe ningún dígito en esa posición")
+else:
+    print("El dígito de la posición", n, "es", dig)
+        

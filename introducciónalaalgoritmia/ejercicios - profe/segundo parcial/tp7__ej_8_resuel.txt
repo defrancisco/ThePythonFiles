@@ -1,0 +1,45 @@
+"""Tp 7,Ejercicio 8: Rellenar una lista con números enteros entre 0 y 100 obtenidos al azar e imprimir el valor
+mínimo y el lugar que ocupa. Tener en cuenta que el mínimo puede estar repetido, en cuyo
+caso deberán mostrarse todas las posiciones que ocupe. La carga de datos termina cuando se
+obtenga un 0 como número al azar, el que no deberá cargarse en la lista."""
+
+import random
+
+def cargarlista():
+  lista=[]
+  nro=random.randint(0,100)
+  while nro!=0:
+    lista.append(nro)
+    nro=random.randint(0,100)
+  return lista
+
+def obtenermin(lista):
+  valor=len(lista)
+  i=0
+  min=100
+  while i<valor:
+    if lista[i]<=min:
+      min=lista[i]
+    i=i+1
+  return min
+
+def imprimirposmin(lista,min):
+  valor=len(lista)
+  if valor==0:
+      print ("No se cargaron valores a la lista")
+  else:
+      print ("El minimo de la lista es", min)
+      i=0
+      while i<valor:
+        if lista[i]==min:
+            print ("El minimo se encuentra en la posicion ",i)
+        i=i+1
+  
+#programa principal
+lista1=cargarlista()
+min=obtenermin(lista1)
+print (lista1)
+#print (min)
+imprimirposmin(lista1,min)
+
+

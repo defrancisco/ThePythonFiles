@@ -1,0 +1,14 @@
+dinero=int (input("Ingrese la cantidad de dinero a retirar: "))
+bmil=dinero//1000
+dinero=dinero%1000
+bqui=dinero//500
+dinero=dinero%500
+bcien=dinero//100
+dinero=dinero%100
+bcin=dinero//50
+dinero=dinero%50
+bdiez=dinero//10
+dinero=dinero%10
+
+print("El cajero entregara ",bmil," billetes de mil, ",bqui," billetes de quinientos, ",bcien," billetes de cien, ",bcin," billetes de cincuenta, ",
+bdiez,"monedas de diez, ",dinero,"monedas de uno")
